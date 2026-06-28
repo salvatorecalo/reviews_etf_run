@@ -1,0 +1,140 @@
+.course-page-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem;
+    color: var(--foreground);
+}
+
+.course-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.title {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 800;
+    margin: 0;
+    background: linear-gradient(135deg, var(--foreground) 0%, #888 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: -1px;
+}
+
+.subtitle {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+    color: var(--foreground);
+    opacity: 0.6;
+}
+
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    align-items: start;
+}
+
+.review-card {
+    background-color: var(--background);
+    border: 1px solid var(--foreground);
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.review-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+.pros-card {
+    border-top: 6px solid #10b981;
+}
+
+.cons-card {
+    border-top: 6px solid #ef4444;
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    padding: 1.5rem 1.5rem 1rem 1.5rem;
+    border-bottom: 1px solid rgba(150, 150, 150, 0.2);
+}
+
+.card-header h2 {
+    font-size: 1.5rem;
+    margin: 0;
+    font-weight: 700;
+}
+
+.review-list {
+    list-style: none;
+    padding: 1.5rem;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.review-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    background: rgba(150, 150, 150, 0.05);
+    padding: 1rem;
+    border-radius: 16px;
+    transition: background 0.2s ease;
+}
+
+.review-item:hover {
+    background: rgba(150, 150, 150, 0.1);
+}
+
+.review-item p {
+    margin: 0;
+    line-height: 1.5;
+    font-size: clamp(0.8rem, 2vw, 0.95rem);
+}
+
+.bullet {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    font-size: 0.8rem;
+    font-weight: bold;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.pro-item .bullet {
+    background-color: rgba(16, 185, 129, 0.15);
+    color: #10b981;
+}
+
+.cons-item .bullet {
+    background-color: rgba(239, 68, 68, 0.15);
+    color: #ef4444;
+}
+
+.empty-state {
+    text-align: center;
+    color: var(--foreground);
+    opacity: 0.5;
+    font-style: italic;
+    padding: 2rem 0;
+    margin: 0;
+}
+
