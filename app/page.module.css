@@ -6,21 +6,3 @@
   justify-content: center;
   gap: 1rem;
 }
-
-.mainTitle {
-  margin-bottom: 2rem;
-  font-size: clamp(1.3rem, 2vw, 2.3rem);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  background-color: var(--blue);
-  color: var(--background);
-  width: 100%;
-  padding: 30px 20px;
-}
-
-.links {
-  display: flex;
-  gap: 1rem;
-}

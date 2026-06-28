@@ -1,0 +1,13 @@
+footer {
+    margin: 0;
+    width: 100%;
+    color: var(--white);
+    background-color: var(--orange);
+    text-align: center;
+    padding: 1.5em 2em;
+}
+
+footer a {
+    color: var(--white);
+    text-decoration: underline;
+}

@@ -3,7 +3,9 @@
   --foreground: #171717;
   --white: #ffffff;
   --blue: #3779dd;
+  --red: #ff0019;
   --dark-blue: #2265c9;
+  --orange: #ED6D33;
 }
 
 @media (prefers-color-scheme: dark) {

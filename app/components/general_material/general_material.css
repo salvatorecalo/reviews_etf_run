@@ -1,0 +1,13 @@
+.general-material {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 !important;
+    gap: 1em;
+    padding: 1em 0;
+}
+
+.general-material h3 {
+    font-size: 1rem;
+    text-align: center;
+}
