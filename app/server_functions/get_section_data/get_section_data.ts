@@ -10,7 +10,11 @@ export async function getSectionData(courseType: courseType) : Promise<ICourse[]
             { type: courseType}
         ).lean()
         
-        return results
+        const cleanResults = results.map(result => ({
+            ...result,
+            _id: result._id.toString()
+        }))
+        return cleanResults as unknown as ICourse[]
     } catch (error) {
         console.log(error)
         return []
