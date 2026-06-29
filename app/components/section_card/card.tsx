@@ -13,7 +13,7 @@ export function SectionCard({course}: {course: ICourse}) {
                     :
                     <Image src="/en_flag.png" alt="english flag" width="30" height="30" />
             }
-            <Link href={`/bachelor-courses/${course.name}`} className={styles.sectionCardBtn}>Leggi le recensioni</Link>
+            <Link href={`/course/${course.name}`} className={styles.sectionCardBtn}>Leggi le recensioni</Link>
         </article>
     )
 }
