@@ -1,6 +1,7 @@
 import { searchProAndCons } from "@/app/server_functions/search_pro_and_cons/search_pro_and_cons"
 import './course_detail.css'
 import Image from "next/image"
+import { SearchPanel } from "@/app/components/SearchPanel/SearchPanel"
 
 interface PageProps {
     params: Promise<{ courseName: string }>
@@ -19,7 +20,8 @@ export default async function CoursePage({ params }: PageProps) {
     const data = await searchProAndCons(decodedName)
     if (!data) {
         return (
-            <div style={{ display: "flex", justifyContent: "center", alignItems: "center", minHeight: "50vh" }}>
+            <div style={{ display: "flex", justifyContent: "center", alignItems: "center", minHeight: "50vh", flexDirection: "column" }}>
+                <SearchPanel with_text={false} />
                 <h2 style={{ color: "var(--foreground)", opacity: 0.7 }}>Corso "{decodedName}" non trovato.</h2>
             </div>
         )

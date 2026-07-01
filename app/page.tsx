@@ -7,7 +7,7 @@ export default async function Home() {
 
   return (
     <div className={style.page}>
-      <SearchPanel />
+      <SearchPanel with_text={true} />
       <GeneralMaterial />
       <p>WARNING: this website is not the official one of Politecnico di Torino and is not even affiliated with it, everything you can find here is mantaied by volounteers.</p>
     </div>
